@@ -1,0 +1,18 @@
+ Angular Sample
+<br>
+
+<ng-container *ngFor="let employee of employeelist index as columnIndex">
+  <table>
+    <tr>
+      <td>
+<input id="zoomZoneLevelField_{{index}}" name="zoomZoneLevelField_{{columnIndex}}" type="text"
+                               [(ngModel)]="employee.name"/>
+      </td>
+      <td>
+        <ejs-checkbox label="Default" [(ngModel)]="employee.male"></ejs-checkbox>
+      </td>
+    </tr>
+  </table>
+ 
+
+  </ng-container>
